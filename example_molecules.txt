@@ -1,0 +1,5 @@
+CCOCCn1nc(CC)c2[nH]c(N3CCC(CN)CC3)nc(=Nc3cc(C)ccn3)c21
+CCCOCCn1c(=O)[nH]c(=NC2CCCC(C(=O)O)C2)c2nnc(-c3ccc(OC)nc3)cc21
+O=C(CCCc1ccccc1)c1ccc(OC(F)F)c(OC(F)F)c1
+CCCC(=O)c1ccc(OC(F)F)c(Oc2ccccn2)c1
+COC1=C(C=C(C=C1)CC2=NC=CC3=CC(=C(C=C32)OC)OC)OC
