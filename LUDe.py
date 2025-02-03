@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 
-
 """
 Input:  - a .TXT file with molecules SMILES notation, one by line.
         - a path to the folder with the ChEMBl databases
@@ -43,15 +42,23 @@ def read_paired_file(filename):
     smiles_final = pd.Series([d[0] for d in smiles])
     return smiles_final
 
-# Name of the dataset
-smiles_dataset = "Random_Molecules5"
+# =============================================================================
+# Queries and Folder Paths
+# =============================================================================
 
-# Folder with files
-directory = str(Path(r"C:\Users\adm\Downloads\Dud-e\Pruebas_LUDe_metrics"))
-# loaded_smiles = pd.read_csv(directory + "\\" + smiles_dataset + '.txt', sep="\t",header=None)
+# Name of the dataset with the queries
+smiles_dataset = "Query_for_LUDe"
+
+# Folder containing the dataset with the queries
+directory = str(Path(r"C:\Users\Decoys_for_Query"))
 loaded_smiles = read_paired_file(f'{directory}\\{smiles_dataset}.txt')
-directory_chembl = str(Path(r"D:\OneDrive - biol.unlp.edu.ar\Lucas_Data\Blancos_Moleculares\CHIK_nsp2\Decoys\Bases_Cehmbl_listas"))
-# OPTIONS
+
+# Folder with ChEMBL dataset
+directory_chembl = str(Path(r"C:\Users\Bases_Cehmbl_listas"))
+
+# =============================================================================
+# Customizable Options
+# =============================================================================
 
 # Physicochemical features limits
 lim_MW = 20         # Molecular Weight
@@ -79,8 +86,9 @@ max_similarity_limit_all = 0.2 # from 0.0 to 0.7
 # Max number of decoys by active compound
 max_decoys = 50 
 
-
-
+# =============================================================================
+# LUDe script
+# =============================================================================
 
 #%%
 def charges_ph(molecule):
