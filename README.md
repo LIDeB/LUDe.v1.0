@@ -1,16 +1,16 @@
-📌**About Us**
+ # About Us
 
-We are a drug discovery team with an interest in the development of publicly available open-source customizable cheminformatics tools
+📌 We are a drug discovery team with an interest in the development of publicly available open-source customizable cheminformatics tools
 to be used in computer-assisted drug discovery. We belong to the Laboratory of Bioactive Research and Development (LIDeB) of the
 National University of La Plata (UNLP), Argentina. Our research group is focused on computer-guided drug repurposing and rational discovery
 of new drug candidates to treat epilepsy and neglected tropical diseases.
 
-💻Web Site https://lideb.biol.unlp.edu.ar
+💻 [LIDeB Web Site](https://lideb.biol.unlp.edu.ar)
 
 
 -------------------------------------------------------------------------------------------------
 
-# LUDe WebApp
+## LUDe WebApp
 
 LUDe (LIDEB’s Useful Decoys) is a WebApp that generates, from a set of active compounds, decoys (putative inactive compounds) which
 can be used to retrospectively validate virtual screening tools/protocols. Decoys are molecules that have not been tested against
@@ -30,7 +30,7 @@ In this Web App, decoys are obtained through four sequential steps:
 ![LUDe_worflow](https://github.com/LIDeB/LUDe.v1.0/blob/main/workflow_lude.png?raw=true)
 
 
-# Installation
+## Installation
 
 Download the LUDe.py file, the Lude-env.yml file and the Base_ChEMBL_final folder (which contains the ChEMBL databases).
 
@@ -42,7 +42,7 @@ conda activate Lude-env
 ```
 
 
-# Running LUDe
+## Running LUDe
 
 Before running LUDe.py, you need to modify specific lines in the script related to folder paths (in the Queries and Folder Paths section). Open the file in a text editor and update the following variables (located between lines 50 and 57) with your file names and paths:
 
@@ -52,6 +52,13 @@ directory: Path to the directory containing the SMILES dataset.
 directory_chembl: Path to the directory containing the ChEMBL datasets.
 ```
 
-If you need to modify any default program settings, you can adjust the parameters in the Customizable Options section (lines 64 to 87) or leave them as they are.
+If you need to modify any default program settings (e.g., physicochemical feature limits or dissimilarity conditions), you can adjust the parameters in the Customizable Options section (lines 64 to 87) or leave them as they are.
 
-If you are looking to contact us, please send a mail to lideb@biol.unlp.edu.ar or contact us by Twitter (https://twitter.com/LIDeB_UNLP)
+To run LUDe, after making all the modifications to the script, open a command prompt, navigate to the script's folder, and type:
+
+```
+python LUDe.py
+```
+## Contact
+
+📧 If you are looking to contact us, please send a mail to lideb@biol.unlp.edu.ar or contact us by [Twitter](https://twitter.com/LIDeB_UNLP)
