@@ -206,10 +206,9 @@ def decoy_fase1(loaded_smiles, verbose = False):
     s = Standardizer()
     df_decoy_complete = pd.DataFrame()
     
-    for i, molecules in enumerate(my_molecules,start = 1):
-       
+    for i, molecules in enumerate(my_molecules, start=1):
         t.markdown("Progress: " + str(i) +"/" + str(tamanio_total))
-        my_bar.progress(i + 1)
+        my_bar.progress(i / tamanio_total)
 
         # Update progress bar
         # if verbose:
